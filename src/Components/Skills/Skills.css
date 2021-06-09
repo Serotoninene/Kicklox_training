@@ -1,0 +1,44 @@
+/* SETUP DU COMPOSANT */
+.Skills{
+    margin: 200px 0;
+    color: #021F63;
+}
+
+.Skills > .container{
+    margin: 0 110px;
+    width: auto;
+}
+
+/* TITLE + LEGENDE */
+.Skills h1{
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* Les 3 piliers  */
+.Skills .Piliers{
+    margin-top: 25px;
+    justify-content: space-between;
+}
+
+.Skills .Pilier{
+    width: 30%;
+}
+
+.Skills .Picto{
+    width: 55%;
+    padding-left: 50px;
+}
+
+.Skills .Piliers h2{
+    font-size: 20px;
+    margin-bottom: 20px ;
+}
+
+.Skills .Piliers p{
+    font-size: 14px;
+    margin-bottom: 20px ;
+}
+
+/* 3 PILIERS */
+/* .Skills  */

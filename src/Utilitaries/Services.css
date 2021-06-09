@@ -1,0 +1,24 @@
+.flex{
+    display: flex;
+}
+
+.fixed{
+    position: fixed;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.border{
+    border : 1px solid red
+}
+
+.resp{
+    width: 100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}

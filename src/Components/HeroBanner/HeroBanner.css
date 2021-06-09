@@ -1,0 +1,147 @@
+.HeroBanner{
+    width: 100vw;
+    height: 523px;
+    background-color: #022063;
+    color: white;
+    padding-top: 119px;
+}
+
+.HeroBanner > .container{
+    margin: 150px 100px;
+    width: auto;
+    justify-content: space-between;
+}
+
+/* PARTIE DE GAUCHE : WORDING */
+.HeroBanner .Wording{
+    width: 563px;
+}
+
+.HeroBanner .Wording h1{
+    font-weight: 900;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+
+.HeroBanner .Wording h2{
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.3em;
+    margin-bottom: 40px;
+}
+
+.Wording .Chiffre{
+    align-items: center;
+}
+
+.Wording .Chiffre p{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.Wording .Chiffre p:first-of-type{
+    width: 270px;
+    font-weight: 900;
+    font-size: 43px;
+}
+
+/* PARTIE DE DROITE : FORMULAIRE  */
+.HeroBanner .Form{
+    width: 455px;
+    height: 519px;
+    background-color: white;
+    border-radius: 20px;
+    color: #334A81;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.Form .container{
+    margin: 50px 55px;
+    width: auto;
+    font-weight: 700;
+    font-size: 14px;
+    color: #CCCBCB;
+}
+
+/* Partie représentant la progression "1 >>> 2 */
+.Form .container .Progression{
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.Form .container .un,.deux{
+    flex-direction: column;
+    align-items: center;
+}
+
+.Form .container .un{
+    color: #37C590;
+}
+
+.Form .container .un .cercle{
+    border : 1px solid #37C590
+}
+
+.Form .container .cercle{
+    border: 1px solid #CCCBCB;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.Form .container > p{
+    text-align: center;
+}
+
+.Form .container .line{
+    background-color: #CCCBCB;
+    width: 50%;
+    height: 1px;
+    margin-top: 15px;
+}
+
+/* Partie formulaire */
+.Form .Inputs{
+    color : #021F63;
+    font-weight: 200;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Form .Inputs form{
+    flex-direction: column;
+}
+
+.Form .Inputs form legend{
+    font-weight: 400;
+    margin-bottom:5px ;
+}
+
+.Form .Inputs form .moreInfo{
+    margin-top: 10px;
+}
+
+.Form .Inputs form .moreInfo input{
+    margin: 10px 0 17px 0;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #021F63;
+    padding: 14px;
+    
+}
+
+.Form .Inputs form .moreInfo input::placeholder{    
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Muli';
+    color: #C4C5C7;
+}
+
+.Form .Inputs form .moreInfo input:focus{    
+    outline-width: 0;
+}
