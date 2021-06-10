@@ -1,8 +1,4 @@
-import React, {useEffect, useState} from 'react'
-
-// GSAP 
-import {gsap, Power3} from 'gsap'
-import {ScrollTrigger} from 'gsap/ScrollTrigger'
+import React from 'react'
 
 // STYLING
 import './Popup.css'
@@ -13,18 +9,6 @@ import Autoportrait from '../../Assets/Photos/photoRando.png'
 
 
 export default function Popup(props){
-
-    useEffect(() => {
-        let tl = gsap.timeline({
-            scrollTrigger : {
-                trigger:'.HeroBanner',
-                start: 'start+=100px top',
-                toggleActions : 'play none none reverse',
-                id:'popup',
-                markers: true
-            }
-        })
-    }, [])
 
     
 

@@ -4,6 +4,7 @@
     color: #ffffff;
     background-color: transparent;
     top: 0;
+    z-index: 1;
 }
 
 .Navbar .Container{

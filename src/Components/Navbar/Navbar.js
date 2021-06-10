@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect} from 'react'
 
 // COMPONENTS
 import Popup from '../Popup/Popup'
@@ -21,8 +21,6 @@ import Button from '../Utils/Button'
 
 
 export default function Navbar(){
-    const [isVisible, setIsVisible] = useState(false)
-
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger)
@@ -42,7 +40,6 @@ export default function Navbar(){
             color: "#021F63",
             ease: Power3.ease,
             duration: 0.2,
-            color: "#021F63",
 
         }, 0)
 

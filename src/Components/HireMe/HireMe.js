@@ -8,10 +8,6 @@ import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import './HireMe.css'
 import '../../Utilitaries/Services.css'
 
-
-// GSAP Component for transitions
-import {Power3} from 'gsap'
-
 // Countdown
 import Countdown from 'react-countdown'
 
