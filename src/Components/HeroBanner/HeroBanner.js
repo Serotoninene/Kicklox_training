@@ -1,7 +1,11 @@
 import React from 'react'
 
-// Components
+// COMPONENTS
 import Button from '../Utils/Button'
+
+// FONT AWESOME COMPONENTS
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 // STYLING
 import './HeroBanner.css'
@@ -12,12 +16,11 @@ export default function HeroBanner(){
         <div className = "HeroBanner "> 
             <div className = "container flex">
                 <div className = "Wording">
-                    <h1>Accédez à un vivier de compétences pour réaliser tous vos projets</h1>
-                    <h2>Prestation de service, pré-embauche, recrutement.</h2>
+                    <h1> Parce que les actes sont plus éloquents que les mots, j'ai recodé votre site </h1>
+                    <h2>  <a href = "https://alexandrepujol.com/"> <FontAwesomeIcon icon = {faArrowRight}/> Mon Portfolio</a>  </h2>
                     <div className = "Chiffre flex">
-                        <p>71 074</p>
-                        <p>ingénieurs et talents tech proposent leurs expertises
-                        aux grands groupes industriels sur Kicklox.</p>
+                        <p>100 %</p>
+                        <p> de ce site a été réalisé grâce à mes compétences en développement front-end.  </p>
                     </div>
                 </div>
                 <div className = "Form">
@@ -42,17 +45,16 @@ export default function HeroBanner(){
 
                         <div className = "Inputs flex">
                             <form className = "flex" method="post">
-                                <legend>Quel est votre besoin ? <span className = "astérisque">*</span></legend>
-                                <label><input type="radio" name="radio"/> Collaborer avec un freelance</label>
-                                <label><input type="radio" name="radio"/> Recruter un talent (CDI)</label>
-                                <label><input type="radio" name="radio"/> Effectuer un portage commercial</label>
-                                <label><input type="radio" name="radio"/> Accéder à notre CVthèque</label>
-                                <label><input type="radio" name="radio"/> Accéder à un outil de gestion des ressources avec matching</label>
+                                <legend> Mes compétences : (toutes les réponses sont valables) <span className = "astérisque">*</span></legend>
+                                <label><input type="radio" name="radio"/> Design (suite Adobe, Figma et Procreate) </label>
+                                <label><input type="radio" name="radio"/> Développement Front : SCSS, GSAP, ReactJS</label>
+                                <label><input type="radio" name="radio"/> Développement Back : PHP, Symfony, NodeJS, MySQL</label>
+                                <label><input type="radio" name="radio"/> Trilingue : Français, Anglais, Espagnol </label>
+                                <label><input type="radio" name="radio"/> Excellent relationnel et appétance pour le travail en équipe</label>
                                 <label className = "moreInfo"> Informations supplémentaires <input type="text" name="moreInfo" placeholder= "Votre Message ..." /></label>
  
                             </form>
                                 <Button content = "Suivant"  />
-
                         </div>
 
                     </div>

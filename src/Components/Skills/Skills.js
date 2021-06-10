@@ -19,8 +19,8 @@ export default function Skills(){
         <div className = "Skills">
             <div className = "container">
                 <div>
-                    <h1>Les 3 piliers de Kicklox pour réaliser votre projet</h1>
-                    <p> Nos savoirs faire complémentaires s'adapte à votre besoin pour vous permettre d'accéder aux compétences techniques.</p>
+                    <h1> Les 3 raisons de ma candidature </h1>
+                    <p> Votre entreprise a su trouver les mots pour me convaincre de postuler et de quitter le freelancing.</p>
                 </div>
 
                 <div className = "Piliers flex">
@@ -28,26 +28,26 @@ export default function Skills(){
                         <div className = "Picto flex">
                             <img src = {GestionDuTalent} alt = "Gestion du Talent" className = "resp"></img>
                         </div>
-                        <h2>La 1ère communauté qualifiée d'ingénieurs et talents tech</h2>
-                        <p>Nous construisons, qualifions et fédérons la plus grande communauté d'ingénieurs et talents tech, prête à intervenir sur vos projets.</p>
+                        <h2> Une structure jeune, dynamique et experte </h2>
+                        <p>De par son impressionnant palmarès et son expertise dans une pluralité de domaines du web, Kicklox me semble la plus à même de développer (jeu de mot totalement recherché) encore mes compétences.</p>
                     </div>
                     <div className = "Pilier">
                         <div className = "Picto flex">
                             <img src = {Marketplace} alt = "Gestion du Talent" className = "resp"></img>
                         </div>
-                        <h2>Une plateforme digitale dédiée au staffing des projets</h2>
-                        <p>Place de marché de talents, appel d'offre, matching, notre plateforme automatise, standardise et accélère vos workflows de staffing.</p>
+                        <h2> Un cadre de travail séduisant</h2>
+                        <p>  Une moyenne d'age jeune, un cadre dynamique, une table de ping-pong tout cela me semble l'équation parfaite pour m'épanouir pleinement au sein d'une structure en adéquation avec mes valeurs et ambitions.</p>
                     </div>
                     <div className = "Pilier">
                         <div className = "Picto flex">
                             <img src = {Staffing} alt = "Gestion du Talent" className = "resp"></img>
                         </div>
-                        <h2>Une équipe d'experts métiers pour vous conseiller</h2>
-                        <p>Notre équipe dédiée vous accompagne à chaque étape, depuis la spécification jusqu'à la livraison de votre projet.</p>
+                        <h2> Travailler dans un cadre pluridisciplinaire  </h2>
+                        <p> Au cours de mes expériences passées j'ai appris que travailler avec une équipe pluridisciplinaire est une expérience extrèmement enrichissante et que je recherche dans chacuns des projets que j'entreprends. </p>
                     </div>
                     
                 </div>
-                <Button content = "Demander des informations"/>
+                <Button content = "Mon portfolio"/>
             </div>
         </div>
     )

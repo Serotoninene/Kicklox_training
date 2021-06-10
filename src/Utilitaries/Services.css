@@ -2,6 +2,10 @@
     display: flex;
 }
 
+.relative{
+    position: relative;
+}
+
 .fixed{
     position: fixed;
 }
@@ -21,4 +25,8 @@
 .grid{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+}
+
+.hidden{
+    display: none;
 }

@@ -1,0 +1,23 @@
+.Popup{
+    left: 20vw;
+    color: #021F63;
+    border-radius: 20px;
+    width: 50vw;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: flex-start;
+    background-color: white;
+}
+
+.Popup .Alexandre .Autoportrait{
+    width: 250px;
+}
+
+.Popup .Description{
+    width: 50%;
+}
+
+.Popup .Description h2{
+    line-height: 55px;
+}

@@ -1,0 +1,9 @@
+@media screen and (max-width: 1279px) {
+    .Homepage{
+        display: none;
+    }
+
+    .HireMe{
+        display: flex;
+    }
+}

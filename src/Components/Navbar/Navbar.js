@@ -1,4 +1,7 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
+
+// COMPONENTS
+import Popup from '../Popup/Popup'
 
 // FONT AWESOME COMPONENTS
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -18,6 +21,8 @@ import Button from '../Utils/Button'
 
 
 export default function Navbar(){
+    const [isVisible, setIsVisible] = useState(false)
+
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger)
@@ -36,6 +41,14 @@ export default function Navbar(){
             backgroundColor: "#FFFFFF",
             color: "#021F63",
             ease: Power3.ease,
+            duration: 0.2,
+            color: "#021F63",
+
+        }, 0)
+
+        tl.to('.Navbar  a',{
+            color: "#021F63",
+            ease: Power3.ease,
             duration: 0.2
         }, 0)
 
@@ -48,6 +61,29 @@ export default function Navbar(){
 
     },[])
 
+    const handleMouseEnter = () => {
+        gsap.fromTo('.Popup',{
+            y:100,
+            opacity:0
+        },
+        {
+            opacity: 1,
+            y:0,
+            display: 'flex',
+            ease: Power3.ease
+        })
+    }
+
+    const handleMouseLeave = () => {
+        gsap.to('.Popup',{
+            opacity: 0,
+            y:100,
+            display: 'none',
+            ease: Power3.easeOut,
+            
+        })    
+    }
+
     return(
         <div className = 'Navbar fixed'> 
             <div className = "Container flex">
@@ -57,19 +93,26 @@ export default function Navbar(){
                         <li> S'inscrire </li>
                         <li> - </li>
                         <li> Univers : Kicklox Services <FontAwesomeIcon icon= {faAngleDown}/> </li>
-                        {/* <a href = "#"> Se connecter / </a> <a href = "#"> S'inscrire </a><span> - Univers : Kicklox Services <i class="fa fa-angle-down" aria-hidden="true"></i></span> */}
                     </ul>
 
                 <div className = "NavLinks flex">
                     <ul className = "Links flex">
                         <li className = "KickloxLogo"><img className = "resp" alt = "kicklox logo" src = {KicklockLogo}></img></li>
-                        <li>Vision</li>
-                        <li>Offre <FontAwesomeIcon icon= {faAngleDown}/> </li>
-                        <li>Solutions <FontAwesomeIcon icon= {faAngleDown}/></li>
-                        <li>Ressources <FontAwesomeIcon icon= {faAngleDown}/></li>
+                        <li> <a href = "https://www.linkedin.com/in/alexandre-pujol-333172b3/" >Linkedin </a></li>
+
+                        <li>  <a href = "https://github.com/Serotoninene"> GitHub</a> </li>
+
+                        <li>  <a href = "https://www.instagram.com/serotoninene/"> Instagram</a> </li>
+                        <li className = "relative"
+                            onMouseEnter = {handleMouseEnter} 
+                            onMouseLeave = {handleMouseLeave }>
+                                Alexandre 
+                            <FontAwesomeIcon icon= {faAngleDown}/>
+                            <Popup /></li>
                     </ul>
 
-                    <Button content = "Prendre un RDV"/>
+
+                    <Button content = "Portfolio"/>
                 </div>
             </div>
 

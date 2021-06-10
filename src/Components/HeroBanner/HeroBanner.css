@@ -3,7 +3,7 @@
     height: 523px;
     background-color: #022063;
     color: white;
-    padding-top: 119px;
+    padding-top: 80px;
 }
 
 .HeroBanner > .container{
@@ -14,11 +14,13 @@
 
 /* PARTIE DE GAUCHE : WORDING */
 .HeroBanner .Wording{
+    margin-top: 50px;
     width: 563px;
 }
 
 .HeroBanner .Wording h1{
     font-weight: 900;
+    font-size: 29px;
     line-height: 42px;
     margin-bottom: 20px;
 }
@@ -48,7 +50,6 @@
 /* PARTIE DE DROITE : FORMULAIRE  */
 .HeroBanner .Form{
     width: 455px;
-    height: 519px;
     background-color: white;
     border-radius: 20px;
     color: #334A81;
